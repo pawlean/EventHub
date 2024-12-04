@@ -1,0 +1,15 @@
+tasks:
+    - name: run back-end
+      openMode: split-left
+      command: |
+          npm install pg dotenv 
+          npm install 
+          npm start
+
+    - name: run front-end
+      openMode: split-right
+      command: |
+          cd client 
+          npm install 
+          echo "REACT_APP_API_URL=$(gp url 3001)" > .env 
+          npm start
