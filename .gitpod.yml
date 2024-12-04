@@ -5,6 +5,7 @@ tasks:
           npm install pg dotenv 
           npm install 
           npm start
+
     - name: run front-end
       openMode: split-right
       command: |
